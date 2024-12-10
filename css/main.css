@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+.head-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+a {
+    color:#36536B;
+    text-decoration: none;
+    font-family: 'Public Sans';
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    a {
+        display: initial;
+    }
+}
