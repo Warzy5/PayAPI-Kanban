@@ -1,5 +1,6 @@
 body {
     min-height: 100vh;
+    background-color: #EDF3F8;
 }
 
 header {
@@ -20,10 +21,18 @@ header {
 }
 
 a {
-    color:#36536B;
+    color: #36536B;
     text-decoration: none;
     font-family: 'Public Sans';
     display: none;
+}
+
+h1 {
+    font-family: 'DM Serif Display';
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    color: #36536B;
 }
 
 a:hover {
@@ -38,6 +47,49 @@ a:hover {
     color: white;
 }
 
+#submit-button {
+    background-color: #BA4270;
+    color: white;
+    border-radius: 32px;
+    border: none;
+}
+
+input {
+    border-radius: 32px;
+    padding: 16px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+
+
+
+
+.hero-section {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-phone {
+    height: 240px;
+}
+
+.contact-option {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
     a {
         display: initial;
@@ -47,6 +99,27 @@ a:hover {
     .burger-menu {
         display: none;
     }
+
+    form {
+        flex-direction: row;
+        position: relative;
+    }
+
+    #submit-button {
+        position: absolute;
+        width: unset;
+        right: 0;
+    }
+
+    .text-zone {
+       
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -54,7 +127,16 @@ a:hover {
         justify-content: unset;
     }
 
-    .call-button {
-        margin-left: auto;
+    .hero-section {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hero-phone {
+        height: 500px;
+    }
+
+    .head-nav {
+        justify-content: space-between;
     }
 }
